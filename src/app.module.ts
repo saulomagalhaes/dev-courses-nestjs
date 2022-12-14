@@ -15,6 +15,8 @@ import { CoursesModule } from './courses/courses.module';
       database: 'postgres',
       autoloadEntities: true,
       synchronize: true,
+      entities: [__dirname + '/**/*.entity{.ts,.js}'],
+      migrations: [__dirname + '/src/migrations/*.ts'],
     }),
   ],
   controllers: [],
